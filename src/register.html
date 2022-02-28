@@ -8,8 +8,38 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style-rtl.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/register.css" />
     <title>SHOPPING | Register page</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="brand">Shopping</a>
+          <nav>
+            <ul>
+              <li id="en-lang"><a href="#">En</a></li>
+              <li id="ar-lang"><a href="#">Ar</a></li>
+              <li><a href="login.html">Sign In</a></li>
+              <li><a href="register.html">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="section-form">
+      <h2>Register User</h2>
+      <form action="" novalidate>
+        <input type="text" id="username" placeholder="Enter User Name" />
+        <input type="email" id="email" placeholder="Enter Email" />
+        <input type="password" id="password" placeholder="Enter Password" />
+        <input type="submit" id="sign-up" value="Sign up" />
+        Have an account ! <a href="login.html">Sign In</a>
+      </form>
+    </section>
+    <script src="./js/langDir.js"></script>
+    <script src="./js/register.js"></script>
+  </body>
 </html>
