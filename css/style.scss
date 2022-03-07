@@ -1,3 +1,4 @@
+
 $color-main: #67c5fc;
 $color-primary: #f3f3f3;
 $color-secondary: #8b8b8b;
@@ -96,43 +97,8 @@ nav {
     }
   }
 }
-/* ---------- Form ---------- */
-.section-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  text-align: center;
-  background: #bc6ff1;
-  padding: 20px;
-  h2 {
-    font-size: 50px;
-    letter-spacing: 2px;
-    color: #52057b;
-  }
-  form {
-    input {
-      font-family: "Oswald", sans-serif;
-      display: block;
-      width: 100%;
-      margin: 5px;
-      height: 40px;
-      padding: 5px;
-      border: 1px solid #ddd;
-      outline: none;
-    }
-  }
-}
-.section-form form input[type="submit"] {
-  font-size: 25px;
-  text-transform: uppercase;
-  height: auto;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-  }
-}
+/* ---------- Form : sign in up.scss---------- */
+
 /* -------------- Search -------------- */
 #search {
   width: 100%;
@@ -164,7 +130,7 @@ nav {
   }
 }
 
-/* ------ */
+/* ------ product item */
 .product-item {
   display: flex;
   width: 100%;
@@ -223,7 +189,7 @@ nav {
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #52057b;
+  background-color: $bg-light;
   color: #fff;
   border-radius: 50%;
   text-align: center;

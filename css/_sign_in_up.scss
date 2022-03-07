@@ -1,0 +1,46 @@
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+  background: #bc6ff1;
+  padding: 20px;
+  a {
+    color: var(--color-main);
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  span {
+    color: var(--color-primary);
+  }
+  h2 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #52057b;
+  }
+  form {
+    input {
+      font-family: "Oswald", sans-serif;
+      display: block;
+      width: 100%;
+      margin: 5px;
+      height: 40px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      outline: none;
+    }
+  }
+}
+.section-form form input[type="submit"] {
+  font-size: 25px;
+  text-transform: uppercase;
+  height: auto;
+  cursor: pointer;
+  width: 100px;
+  margin: 0 auto;
+  &:hover {
+    opacity: 0.8;
+  }
+}

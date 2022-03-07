@@ -15,6 +15,6 @@ if (username) {
 logout.addEventListener("click", function () {
   localStorage.clear();
   setTimeout(() => {
-    window.location = "register.html";
+    window.location = "./src/register.html";
   }, 1500);
 });

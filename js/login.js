@@ -19,7 +19,7 @@ function login(e) {
       getpassword === password.value
     ) {
       setTimeout(() => {
-        window.location = "index.html";
+        window.location = "../index.html";
       }, 1500);
     } else {
       alert("username or password is wrong");

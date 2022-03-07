@@ -87,7 +87,7 @@ function getUniqArray(arr, id) {
 
 function saveItemData(id) {
   localStorage.setItem("productId", id);
-  window.location = "cartDetails.html";
+  window.location = "./src/cartDetails.html";
   // addedToViews(id);
 }
 
