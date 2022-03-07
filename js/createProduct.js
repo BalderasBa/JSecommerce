@@ -40,7 +40,7 @@ function createProductFunc(e) {
     productDesc.value = "";
     productSize.value = "";
     // alert("product created successfuly");
-    setTimeout(() => (window.location = "index.html"), 500);
+    setTimeout(() => (window.location = "../index.html"), 500);
   } else {
     alert("enter data");
   }
@@ -48,7 +48,7 @@ function createProductFunc(e) {
 function uploadImage() {
   let file = this.files[0];
   const types = ["image/png", "image/jpg"];
-  if (types.indexOf(file.type) == -1) {
+  if (types.indexOf(file.type) === -1) {
     alert("type not supported");
     return;
   }

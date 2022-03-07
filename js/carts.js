@@ -16,6 +16,7 @@ function drowCartProductsUI(allProducts = []) {
         class="product-item-img"
         alt="Philips headphone"
       />
+      
       <div class="product-item-desc">
         <h2>${item.title}</h2>
         <p>${item.desc}</p>
