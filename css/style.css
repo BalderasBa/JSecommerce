@@ -64,11 +64,10 @@
 
 .form {
   width: 250px;
-  height: 420px;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
   position: absolute;
-  top: -50px;
+  top: -100px;
   left: 870px;
   border-radius: 10px;
   padding: 25px;
@@ -100,26 +99,22 @@
   caret-color: orange;
 }
 
-.form input:focus {
-  outline: none;
-}
-
-::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder {
   color: white;
   font-family: Arial;
 }
 
-:-ms-input-placeholder {
+.form input:-ms-input-placeholder {
   color: white;
   font-family: Arial;
 }
 
-::-ms-input-placeholder {
+.form input::-ms-input-placeholder {
   color: white;
   font-family: Arial;
 }
 
-::placeholder {
+.form input::placeholder {
   color: white;
   font-family: Arial;
 }
@@ -338,6 +333,7 @@
           box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  outline: none;
 }
 
 body {
@@ -438,7 +434,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: orange;
+  color: #ffa500;
 }
 
 /* -------------- Products -------------- */

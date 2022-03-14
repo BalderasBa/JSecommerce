@@ -19,6 +19,7 @@ function login(e) {
       getpassword === password.value
     ) {
       setTimeout(() => {
+        localStorage.setItem("products", JSON.stringify(productsDB));
         window.location = "../index.html";
       }, 1500);
     } else {
