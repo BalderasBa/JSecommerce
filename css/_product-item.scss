@@ -1,0 +1,52 @@
+.product-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  min-height: 120px;
+  img {
+    width: 25%;
+    margin-right: 10px;
+  }
+  .desc a {
+    display: block;
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+  }
+  .actions {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .add-to-cart {
+      display: block;
+      margin-left: auto;
+      color: #fff;
+      background-color: darkgreen;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: "Oswald", sans-serif;
+    }
+    .favorite {
+      cursor: pointer;
+      margin-left: auto;
+      font-size: 20px;
+      display: block;
+    }
+  }
+}
+.edit-product {
+  display: inline-block;
+  width: 120px;
+  border: none;
+  background: red;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 5px;
+}

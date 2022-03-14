@@ -12,10 +12,9 @@ let drowProductsUI;
     }">
     <img
       src="${item.imageUrl}"
-      class="product-item-img"
       alt="${item.title}"
     />
-    <div class="product-item-desc">
+    <div class="desc">
       <a onclick="saveItemData(${item.id})">${item.title}</a>
       <p>${item.desc}</p>
       <span>Size: ${item.size}</span></br>
@@ -27,7 +26,7 @@ let drowProductsUI;
       }
       ${item.ismine === true && "<button class='edit-product'>Delete</button>"}
     </div>
-    <div class="product-item-actions">
+    <div class="actions">
       <button class="add-to-cart" id="add-cart" onclick="addedToCart(${
         item.id
       })">Add to Cart</button>
@@ -158,35 +157,8 @@ function getFilterdProducts(e) {
 // Editing Product
 function editProduct(id) {
   localStorage.setItem("editProduct", id);
-  window.location = "editProduct.html";
+  window.location = "./src/editProduct.html";
 }
 
-/*
 // Add to MyViews:
-function addedToViews(id) {
-  //  check if user is loged in
-  if (localStorage.getItem("username")) {
-    let chosenItem = products.find((item) => item.id === id);
-    chosenItem.liked = true;
-    favoriteItems = [...favoriteItems, chosenItem];
 
-    getUniqArray(favoriteItems, "id");
-    addedInFav = new Set(favoriteItems);
-    localStorage.setItem("myViews", JSON.stringify([...addedInFav]));
-
-    products.map((item) => {
-      if (item.id === chosenItem.id) {
-        item.liked = true;
-      }
-      // else {
-      //   item.liked = false;
-      // }
-    });
-    localStorage.setItem("myViews", JSON.stringify([...addedInFav]));
-    drowProductsUI(products);
-  } else {
-    window.location = "login.html";
-  }
-}
-
-*/

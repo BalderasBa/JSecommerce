@@ -8,35 +8,69 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style-rtl.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>SHOPPING | Login page</title>
   </head>
+
   <body>
-    <header>
+    <div class="main">
       <div class="container">
-        <div class="header-content">
-          <a href="../index.html" class="brand">Shopping</a>
-          <nav>
-            <ul>
-              <li id="en-lang"><a href="#">En</a></li>
-              <li id="ar-lang"><a href="#">Ar</a></li>
-              <li><a href="login.html">Sign In</a></li>
-              <li><a href="register.html">Sign Up</a></li>
-            </ul>
-          </nav>
+        <nav>
+          <a href="../index.html" class="logo">Company</a>
+          <ul id="user-info">
+            <li id="en-lang"><a href="#">English</a></li>
+            <!-- <li id="ar-lang"><a href="#">Arabic</a></li> -->
+            <li><a href="./login.html">Sign in</a></li>
+            <li><a href="./register.html">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Shop free <br /><span>Y Shop</span><br />international</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam
+          voluptate <br />
+          quam porro officiis commodi, sapiente eaque maxime consectetur <br />
+          ex facere iure hic eos sed possimus. Nisi quam sequi obcaecati.
+        </p>
+        <button class="cn"><a href="">Join us</a></button>
+
+        <div class="form">
+          <h2>Login Here</h2>
+          <input
+            type="text"
+            name="username"
+            placeholder="enter username here"
+            id="username"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="enter password here"
+            id="password"
+          />
+          <button id="sign-in"><a href="#">Login</a></button>
+          <p class="link">
+            Don't have an account <br />
+            <a href="./register.html">Sign up</a> here
+          </p>
+          <p class="liwith">Login With</p>
+          <div class="icons">
+            <a href=""><i class="fab fa-google"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitch"></i></a>
+            <a href=""><i class="fab fa-skype"></i></a>
+          </div>
         </div>
       </div>
-    </header>
-    <section class="section-form">
-      <h2>Login User</h2>
-      <form action="">
-        <input type="text" placeholder="Enter User Name" id="username" />
-        <input type="password" placeholder="Enter Password" id="password" />
-        <input type="submit" value="Sign in" id="sign-in" />
-        <span>Have not an account ! </span> <a href="register.html">Sign Up</a>
-      </form>
-    </section>
+    </div>
     <script src="../js/langDir.js"></script>
     <script src="../js/login.js"></script>
   </body>

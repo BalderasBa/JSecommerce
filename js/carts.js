@@ -13,17 +13,16 @@ function drowCartProductsUI(allProducts = []) {
       <div class="product-item">
       <img
         src="${item.imageUrl}"
-        class="product-item-img"
         alt="Philips headphone"
       />
       
-      <div class="product-item-desc">
+      <div class="desc">
         <h2>${item.title}</h2>
         <p>${item.desc}</p>
         <span>Size: ${item.size}</span></br> 
         <span>Quantity: ${item.qty}</span>
       </div>
-      <div class="product-item-actions">
+      <div class="actions">
         <button class="add-to-cart" id="add-cart" onclick="removeFromCart(${item.id})">Remove from Cart</button>
         <i class="favorite far fa-heart"></i>
       </div>

@@ -13,16 +13,15 @@ function drowFavoriteProductsUI(allProducts = []) {
       <div class="product-item">
       <img
         src="${item.imageUrl}"
-        class="product-item-img"
         alt="Philips headphone"
       />
-      <div class="product-item-desc">
+      <div class="desc">
         <h2>${item.title}</h2>
         <p>${item.desc}</p>
         <span>Size: ${item.size}</span></br> 
         <span>Quantity: ${item.qty}</span>
       </div>
-      <div class="product-item-actions">
+      <div class="actions">
         <button class="add-to-cart" id="add-cart" onclick="removeFromFav(${item.id})">Remove from Favorites</button>
         <!--<i class="favorite far fa-heart"></i>-->
          <i class="favorite fas fa-heart" style="color:red"></i> 

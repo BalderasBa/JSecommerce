@@ -11,10 +11,9 @@ const noProductDom = document.querySelector(".no-products");
           }">
           <img
             src="${item.imageUrl}"
-            class="product-item-img"
             alt="${item.title}"
           />
-          <div class="product-item-desc">
+          <div class="desc">
             <a onclick="saveItemData(${item.id})">${item.title}</a>
             <p>${item.desc}</p>
             <span>Size: ${item.size}</span></br>

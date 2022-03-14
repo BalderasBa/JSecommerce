@@ -19,50 +19,58 @@
   <body>
     <header>
       <div class="container">
-        <div class="header-content">
-          <a href="index.html" class="brand">Shopping</a>
-          <nav>
-            <ul id="links">
-              <li><a href="./src/login.html">Sign In</a></li>
-              <li><a href="./src/register.html">Sign Up</a></li>
-            </ul>
-            <ul id="user-info">
-              <li id="en-lang"><a href="#">En</a></li>
-              <li id="ar-lang"><a href="#">Ar</a></li>
-              <li><a href="./src/profile.html" id="user"></a></li>
-              <li><a href="./src/favorites.html">Favorites</a></li>
-              <li><a href="./src/myProducts.html">My Products</a></li>
-              <li class="shopping-cart">
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                <span class="badge"></span>
-                <div class="cart-products">
-                  <div></div>
-                  <a href="./src/cartproducts.html">View All</a>
-                </div>
-              </li>
-              <li><a href="#" id="logout">Logout</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav>
+          <a href="index.html" class="logo">Company</a>
+          <input
+            class="search"
+            type="search"
+            id="search"
+            name=""
+            placeholder="type to search"
+          />
+          <ul id="links">
+            <li><a href="./src/login.html">Sign In</a></li>
+            <li><a href="./src/register.html">Sign Up</a></li>
+          </ul>
+          <ul id="user-info">
+            <li id="en-lang"><a href="#">English</a></li>
+            <!-- <li id="ar-lang"><a href="#">Arabic</a></li> -->
+            <li><a href="./src/profile.html" id="user"></a></li>
+            <li><a href="./src/favorites.html">Favorites</a></li>
+            <li><a href="./src/myProducts.html">My Products</a></li>
+            <li class="shopping-cart">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <span class="badge"></span>
+              <div class="cart-products">
+                <div></div>
+                <a href="./src/cartproducts.html">View All</a>
+              </div>
+            </li>
+            <li><a href="#" id="logout">Logout</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <section class="home">
       <div class="container">
-        <input
-          type="search"
-          name=""
-          id="search"
-          placeholder="search product here"
-        />
         <div class="products"></div>
         <div class="products-filter">
           <h2>Filter by Size</h2>
-          <select name="" id="size-filter">
+          <select name="" id="size-filter" class="size-filter">
             <option value="" hidden>Filter by Size</option>
             <option value="all">All</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="products-filter">
+          <select name="" id="trier-filter" class="size-filter">
+            <option value="" hidden>Trier by Size</option>
+            <option value="all">none</option>
+            <option value="large">newest</option>
+            <option value="small">price up</option>
+            <option value="medium">price down</option>
           </select>
         </div>
       </div>

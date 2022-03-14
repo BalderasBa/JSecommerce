@@ -1,46 +1,158 @@
-.section-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  text-align: center;
-  background: #bc6ff1;
-  padding: 20px;
-  a {
-    color: var(--color-main);
-    text-decoration: underline;
-    font-size: 20px;
-  }
-  span {
-    color: var(--color-primary);
-  }
-  h2 {
-    font-size: 50px;
-    letter-spacing: 2px;
-    color: #52057b;
-  }
-  form {
-    input {
-      font-family: "Oswald", sans-serif;
-      display: block;
-      width: 100%;
-      margin: 5px;
-      height: 40px;
-      padding: 5px;
-      border: 1px solid #ddd;
-      outline: none;
-    }
-  }
+.main {
+  width: 100%;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url("../src/images/back.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
-.section-form form input[type="submit"] {
-  font-size: 25px;
-  text-transform: uppercase;
+// ----------------------------
+// ----------------------------
+// ----------------------------
+// ----------------------------
+.content {
+  width: 1200px;
   height: auto;
+  margin: auto;
+  color: white;
+  position: relative;
+}
+.content > p {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+.content h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 10%;
+  letter-spacing: 2px;
+}
+.content .cn {
+  width: 160px;
+  height: 40px;
+  background: orange;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
   cursor: pointer;
-  width: 100px;
-  margin: 0 auto;
-  &:hover {
-    opacity: 0.8;
-  }
+  transition: 500ms ease;
+}
+.content .cn a {
+  text-decoration: none;
+  color: black;
+  transition: 500ms ease;
+}
+.content .cn:hover {
+  color: black;
+  background: white;
+}
+.content span {
+  color: orange;
+  font-size: 60px;
+}
+
+.form {
+  width: 250px;
+  height: 420px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.5) 50%
+  );
+  position: absolute;
+  top: -50px;
+  left: 870px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.form h2 {
+  width: 200px;
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+.form input {
+  width: 200px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid orange;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  caret-color: orange;
+}
+.form input:focus {
+  outline: none;
+}
+::placeholder {
+  color: white;
+  font-family: Arial;
+}
+.form button {
+  width: 200px;
+  height: 40px;
+  background: orange;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 500ms ease;
+}
+.form button:hover {
+  background: white;
+  color: orange;
+}
+.form button > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.form .link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .link a {
+  text-decoration: none;
+  color: orange;
+}
+.liwith {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.form .icons a {
+  color: white;
+  text-decoration: none;
+}
+.form .icons i {
+  color: white;
+  font-size: 25px;
+  padding-left: 12px;
+  padding-top: 5px;
+  transition: 500ms ease;
+}
+.form .icons i:hover {
+  color: orange;
 }
