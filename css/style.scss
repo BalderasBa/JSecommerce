@@ -86,21 +86,23 @@ nav {
   }
 }
 
-/* Create Product */
+/* Create Product icon */
 .create-product-icon {
   position: fixed;
   bottom: 20px;
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: $bg-light;
-  color: #fff;
+  background-color: $bg-dark;
+  color: $color-main;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
+  transition: 300ms ease-in;
   cursor: pointer;
   &:hover {
-    opacity: 0.8;
+    color: #fff;
+    transform: scale(1.1);
   }
 }
 

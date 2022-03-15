@@ -324,30 +324,94 @@
   opacity: 0.8;
 }
 
-/* ------ Profile ------ */
-#user-avatar {
+.profile-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-page .container #user-avatar {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   margin: 10px 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixe d;
+  background-attachment: fixed;
   background-position: center;
 }
 
+.profile-page .container #user-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.profile-page .container #user-email {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.profile-page .container span {
+  color: #ffa500;
+  background-color: #0d1e4f;
+  border-radius: 50%;
+  padding: 1px 5px;
+}
+
+.profile-page .container a {
+  margin-top: 10px;
+  background: #ffa500;
+  color: #174f8f;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+}
+
+.profile-page .container a:hover {
+  color: #ffa500;
+  background: #174f8f;
+}
+
+/* ------ Profile ------ */
 /* ------ Edit profile ------ */
-#edit-profile-form input {
+form input {
   width: 100%;
   height: 40px;
   display: block;
   margin: 10px 0;
 }
 
-#edit-profile-form input[type="submit"] {
+form input[type="submit"] {
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  background: #ffa500;
+  color: #174f8f;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-radius: 5px;
   cursor: pointer;
-  background: #333;
-  color: #fff;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+}
+
+form input[type="submit"]:hover, form input[type="submit"]:focus {
+  color: #ffa500;
+  background: #174f8f;
 }
 
 .search {
@@ -466,23 +530,27 @@ nav ul li i {
   cursor: pointer;
 }
 
-/* Create Product */
+/* Create Product icon */
 .create-product-icon {
   position: fixed;
   bottom: 20px;
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #174f8f;
-  color: #fff;
+  background-color: #0d1e4f;
+  color: #ffa500;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
   cursor: pointer;
 }
 
 .create-product-icon:hover {
-  opacity: 0.8;
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* -------------- cart Products + badge + item-quantity -------------- */
