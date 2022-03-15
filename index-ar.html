@@ -14,40 +14,45 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-rtl.css" />
-    <title>SHOPPING | Home page</title>
+    <title>تسوق | الصفحة الرئيسية</title>
   </head>
   <body>
     <header>
       <div class="container">
         <nav>
-          <a href="index.html" class="logo">Company</a>
+          <a href="index-ar.html" class="logo">شركة</a>
           <input
             class="search"
             type="search"
             id="search"
-            placeholder="type to search"
+            placeholder="اكتب لتبحث"
           />
           <ul id="links">
-            <li><a href="./src/login.html">Sign In</a></li>
-            <li><a href="./src/signup.html">Sign Up</a></li>
+            <li><a href="./src/login.html">دخول</a></li>
+            <li><a href="./src/signup.html">تسجيل</a></li>
           </ul>
           <ul id="user-info">
-            
-            <li id="en-lang"><a href="#"><img src="./src/images/us.svg" alt=""></a></li>
-            <li id="ar-lang"><a href="index-ar.html"><img src="./src/images/sa.svg" alt=""></a></li>
-           
-            <li><a href="./src/profile.html" id="user"></a><i class="fa-solid fa-user"></i></li>
-            <li><a href="./src/favorites.html">Favorites</a></li>
-            <li><a href="./src/myProducts.html">My Products</a></li>
+            <li id="en-lang">
+              <a href="index.html"><img src="./src/images/us.svg" alt="" /></a>
+            </li>
+            <li id="ar-lang">
+              <a href="#"><img src="./src/images/sa.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="./src/profile.html" id="user"></a>
+              <i class="fa-solid fa-user"></i>
+            </li>
+            <li><a href="./src/favorites.html">المفظلة</a></li>
+            <li><a href="./src/myProducts.html">سلعي</a></li>
             <li class="shopping-cart">
               <a href="#"><i class="fas fa-shopping-cart"></i></a>
               <span class="badge"></span>
               <div class="cart-products">
                 <div></div>
-                <a href="./src/cartproducts.html">View All</a>
+                <a href="./src/cartproducts.html">شاهد الكل</a>
               </div>
             </li>
-            <li><a href="#" id="logout">Logout</a></li>
+            <li><a href="#" id="logout">خروج</a></li>
           </ul>
         </nav>
       </div>
@@ -56,21 +61,21 @@
       <div class="container">
         <div class="products"></div>
         <div class="products-filter">
-          <h2>Filter by:</h2>
+          <h2>فلترة حسب</h2>
           <select name="" id="size-filter" class="size-filter">
-            <option value="" hidden>Filter by Size</option>
-            <option value="all">All</option>
+            <option value="" hidden>فلترة</option>
+            <option value="all">الكل</option>
             <option value="small">NuuN</option>
             <option value="medium">Festina</option>
             <option value="large">Ray-Ban</option>
           </select>
-          <h2>Trier:</h2>
+          <h2>ترتيب المعروضات</h2>
           <select name="" id="trier-filter" class="size-filter">
-            <option value="" hidden>Trier by</option>
-            <option value="all">none</option>
-            <option value="newest">newest</option>
-            <option value="priceup">price up</option>
-            <option value="pricedown">price down</option>
+            <option value="" hidden>ترتيب حسب</option>
+            <option value="all">لاشيء</option>
+            <option value="newest">الأحدث</option>
+            <option value="priceup">الأعلى سعرا</option>
+            <option value="pricedown">الأقل سعرا</option>
           </select>
         </div>
       </div>

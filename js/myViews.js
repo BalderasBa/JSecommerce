@@ -21,7 +21,7 @@ const noProductDom = document.querySelector(".no-products");
               <button onclick="editProduct(${
                 item.id
               })" class="edit-product">Edit</button>
-              <button class="edit-product" onclick="deleteProduct(${
+              <button class="delete-product" onclick="deleteProduct(${
                 item.id
               })">Delete</button>
           </div>

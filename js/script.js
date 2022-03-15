@@ -19,17 +19,17 @@ let drowProductsUI;
       <p>${item.desc}</p>
       <span>Size: ${item.size}</span></br>
       ${
-        item.ismine === true &&
+        item.ismine &&
         "<button onclick='editProduct(" +
           item.id +
           ")' class='edit-product'>Edit</button>"
       }
-      ${item.ismine === true && "<button class='edit-product'>Delete</button>"}
+      ${item.ismine && "<button class='delete-product'>Delete</button>"}
     </div>
     <div class="actions">
       <button class="add-to-cart" id="add-cart" onclick="addedToCart(${
         item.id
-      })">Add to Cart</button>
+      })"><i class="fas fa-plus"></i></button>
       <i class="${
         item.liked == true ? "favorite fas fa-heart" : "favorite far fa-heart"
       }" style="color: ${
@@ -62,7 +62,14 @@ function addedToCart(id) {
     // when readd it's will be add in badge from 0
     cartProductDiv.innerHTML = "";
     addedItem.forEach((item) => {
-      cartProductDiv.innerHTML += `<p>${item.title} <span class="item-qty">${item.qty}</span></p>`;
+      cartProductDiv.innerHTML += `
+      <div class="all-items">
+        <div class="item">
+        <img src=${item.imageUrl}/>
+          <p>${item.title}</p>
+          <span class="item-qty">${item.qty}</span>
+        </div>
+      </div>`;
     });
 
     // addedItem = [...addedItem, chosenItem];
@@ -127,10 +134,9 @@ function addedToFavorite(id) {
     products.map((item) => {
       if (item.id === chosenItem.id) {
         item.liked = true;
+      } else {
+        item.liked = false;
       }
-      // else {
-      //   item.liked = false;
-      // }
     });
     localStorage.setItem("productsFavorite", JSON.stringify([...addedInFav]));
     drowProductsUI(products);
@@ -159,6 +165,3 @@ function editProduct(id) {
   localStorage.setItem("editProduct", id);
   window.location = "./src/editProduct.html";
 }
-
-// Add to MyViews:
-

@@ -13,8 +13,6 @@ itemDom.innerHTML = `
 <span>Size: ${productDetails.size}</span> </br> 
 <span>Quantity: ${productDetails.qty}</span> </br>
 <button onclick="editProduct(${productId})">Edit </button>`;
-// quantity always 0 ???
-// you can edit if  it just in ismine[]
 
 // Editing Product
 function editProduct(id) {

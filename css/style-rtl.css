@@ -4,3 +4,6 @@
 [dir="rtl"] .products-filter {
   float: left;
 }
+[dir="rtl"] .product-item .actions {
+  left: -120px;
+}

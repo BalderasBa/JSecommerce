@@ -39,4 +39,5 @@ let productsDB = [
   },
 ];
 
+// in login:
 // localStorage.setItem("products", JSON.stringify(productsDB));
