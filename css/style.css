@@ -292,16 +292,6 @@
   color: #ffa500;
 }
 
-.item-details img {
-  width: 100%;
-  margin: 10px 0;
-  border: 1px solid #333;
-  padding: 2px;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .create-product-page input,
 .create-product-page select {
   width: 100%;
@@ -322,6 +312,60 @@
 
 .create-product-page input[type="submit"]:hover {
   opacity: 0.8;
+}
+
+.item-details img {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #333;
+  padding: 2px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Medium */
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+    overflow: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .search {
+    display: none;
+  }
+  header nav .logo {
+    font-size: 25px;
+  }
+  header nav ul li a {
+    font-size: 12px;
+  }
+  header nav ul li i.fa-solid {
+    display: none;
+  }
+  .products {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* small */
+@media (max-width: 767px) {
+  .products {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  header nav .logo {
+    font-size: 20px;
+  }
 }
 
 .profile-page .container {
@@ -414,17 +458,16 @@ form input[type="submit"]:hover, form input[type="submit"]:focus {
   background: #174f8f;
 }
 
-.search {
-  font-family: "Oswald", sans-serif;
-  min-width: 250px;
-  height: 35px;
-  background: white;
-  border: 1px solid orange;
-  font-size: 16px;
-  padding: 10px;
-  color: black;
-  border-radius: 5px;
-  caret-color: orange;
+[dir="rtl"] .products {
+  float: right;
+}
+
+[dir="rtl"] .products-filter {
+  float: left;
+}
+
+[dir="rtl"] .product-item .actions {
+  left: -120px;
 }
 
 * {
@@ -453,6 +496,20 @@ body {
           justify-content: space-between;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+}
+
+/* ---------- search ---------- */
+.search {
+  font-family: "Oswald", sans-serif;
+  min-width: 200px;
+  height: 35px;
+  background: white;
+  border: 1px solid orange;
+  font-size: 16px;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  caret-color: orange;
 }
 
 /* ---------- header ---------- */
@@ -553,7 +610,7 @@ nav ul li i {
           transform: scale(1.1);
 }
 
-/* -------------- cart Products + badge + item-quantity -------------- */
+/* -------------- cart Products + badge -------------- */
 nav ul li .badge {
   width: 15px;
   height: 15px;

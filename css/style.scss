@@ -1,9 +1,8 @@
 @import "./sign_in_up";
-@import "./product-item";
-@import "./cartDetails";
-@import "./createProduct";
+@import "./product";
+@import "./responsive";
 @import "./profile";
-@import "./search";
+@import "./style-rtl";
 
 $color-main: #ffa500;
 $color-primary: #f3f3f3;
@@ -31,7 +30,19 @@ body {
   justify-content: space-between;
   column-gap: 30px;
 }
-
+/* ---------- search ---------- */
+.search {
+  font-family: "Oswald", sans-serif;
+  min-width: 200px;
+  height: 35px;
+  background: white;
+  border: 1px solid orange;
+  font-size: 16px;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  caret-color: orange;
+}
 /* ---------- header ---------- */
 header {
   background-color: $bg-dark;
@@ -106,7 +117,7 @@ nav {
   }
 }
 
-/* -------------- cart Products + badge + item-quantity -------------- */
+/* -------------- cart Products + badge -------------- */
 nav ul li .badge {
   width: 15px;
   height: 15px;
