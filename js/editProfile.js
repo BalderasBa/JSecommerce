@@ -6,9 +6,9 @@ const userEmail = localStorage.getItem("email");
 // const userImage = document.querySelector("#change-avatar");
 const userNInput = document.querySelector("#change-name");
 const userEInput = document.querySelector("#change-email");
-// const userEInput = document.querySelector("#change-password0");
-// const userEInput = document.querySelector("#change-password1");
-// const userEInput = document.querySelector("#change-password2");
+// const userP0Input = document.querySelector("#change-password0");
+// const userP1Input = document.querySelector("#change-password1");
+// const userP2Input = document.querySelector("#change-password2");
 const editForm = document.querySelector("#edit-profile-form");
 
 // Setting values
